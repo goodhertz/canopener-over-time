@@ -2,12 +2,7 @@
 <html>
   <head>
     <title>CanOpener, over time</title>
-    <style type="text/css">
-
-      * { padding:0; margin:0; }
-      body { background-image:url(assets/soft_circle_scales.png); }
-
-    </style>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div id="images">
