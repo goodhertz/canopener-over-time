@@ -2,6 +2,37 @@
 * { padding:0; margin:0; }
 body { background-image:url(assets/soft_circle_scales.png); }
 
+body {
+  padding-top: 100px;
+}
+
+#images-holder, #images, #images img {
+  width: 300px;
+  height: 535px;
+}
+
+#images-holder {
+  margin: auto auto;
+  position: relative;
+}
+
+#images {
+  position: relative;
+}
+
 #images img {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: none;
+}
+
+img.visible {
+  display: block !important;
+}
+
+#range {
+  width: 100%;
+  margin-top: 20px;
 }

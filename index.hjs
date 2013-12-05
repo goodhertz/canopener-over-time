@@ -3,14 +3,17 @@
   <head>
     <title>CanOpener, over time</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="jquery.js"></script>
   </head>
   <body>
-    <div id="images">
-      {{#images}}
-      <img src="images/{{.}}"/>
-      {{/images}}
+    <div id="images-holder">
+      <div id="images">
+        {{#images}}
+        <img src="images/{{.}}"/>
+        {{/images}}
+      </div>
+      <input id="range" type="range" min="0" max="{{image_count}}" value="0"/>
     </div>
-    <script type="text/javascript">
-    </script>
+    <script type="text/javascript" src="range.js"></script>
   </body>
 </html>
