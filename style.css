@@ -3,12 +3,11 @@
 body { background-image:url(assets/soft_circle_scales.png); }
 
 body {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 #images-holder, #images, #images img {
   width: 300px;
-  height: 535px;
 }
 
 #images-holder {
@@ -25,14 +24,63 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  display: none;
+  height: 100%;
+  width: 100%;
 }
 
 img.visible {
+  z-index: 100 !important;
   display: block !important;
 }
 
 #range {
   width: 100%;
   margin-top: 20px;
+}
+
+.device {
+  width: 311px;
+  height: 617px;
+  background: #222;
+  border-radius: 30px;
+  position: relative;
+  margin: auto auto;
+}
+
+.device .top {
+  height: 32px;
+  padding-top: 30px;
+}
+
+.device .middle {
+  margin-bottom: 15px;
+}
+
+.device .top div,
+.device .middle div,
+.device .bottom div {
+  margin: auto auto;
+}
+
+.earpiece {
+  width: 40px;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+}
+
+.screen {
+  width: 270px;
+  height: 482px;
+  background: transparent;
+  background-size: cover;
+  position: relative;
+}
+
+.home-button {
+  border-radius: 100%;
+  height: 36px;
+  width: 36px;
+  background: #222;
+  border: 2px solid white;
 }

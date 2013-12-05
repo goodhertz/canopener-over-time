@@ -8,12 +8,22 @@
   <body>
     <div id="images-holder">
       <div id="images">
-        {{#images}}
-        <img src="images/{{.}}"/>
-        {{/images}}
+        <div class="device">
+          <div class="top"><div class="earpiece"></div></div>
+          <div class="middle">
+            <div class="screen">
+              <img src="{{image_0}}" class="visible"/>
+              <img/>
+            </div>
+          </div>
+          <div class="bottom"><div class="home-button"></div></div>
+        </div>
       </div>
       <input id="range" type="range" min="0" max="{{image_count}}" value="0"/>
     </div>
+    <script type="text/javascript">
+      var images = {{{images}}};
+    </script>
     <script type="text/javascript" src="range.js"></script>
   </body>
 </html>
