@@ -17,7 +17,7 @@ var current = 0;
 var cycle = function() {
     var $visible = $(".screen img.visible");
     var $notVisible = $(".screen img").not(".visible");
-    $notVisible.attr("src", images[current]).addClass("visible").animate({ opacity: 1 });
+    $notVisible.attr("src", images[current]).addClass("visible").animate({ opacity: 1 }, { duration: 100 });
     $visible.removeClass("visible").animate({ opacity: 0 });
 };
 
