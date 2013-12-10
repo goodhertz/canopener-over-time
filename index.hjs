@@ -8,6 +8,8 @@
   <body>
     <div id="images-holder">
       <div id="images">
+        <div id="prev">&laquo;</div>
+        <div id="next">&raquo;</div>
         <div class="device">
           <div class="top"><div class="earpiece"></div></div>
           <div class="middle">
@@ -19,7 +21,7 @@
           <div class="bottom"><div class="home-button"></div></div>
         </div>
       </div>
-      <input id="range" type="range" min="0" max="{{image_count}}" value="0"/>
+      <!-- <input id="range" type="range" min="0" max="{{image_count}}" value="0"/> -->
     </div>
     <script type="text/javascript">
       var images = {{{images}}};

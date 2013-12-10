@@ -84,3 +84,17 @@ img.visible {
   background: #222;
   border: 2px solid white;
 }
+
+#prev {
+  position: absolute;
+  top: 250px;
+  left: -100px;
+  font-size: 100px;
+}
+
+#next {
+  position: absolute;
+  top: 250px;
+  right: -100px;
+  font-size: 100px;
+}
